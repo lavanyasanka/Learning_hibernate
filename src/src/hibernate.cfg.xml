@@ -15,9 +15,9 @@
 
         <!-- Database connection settings -->
         <property name="connection.driver_class">oracle.jdbc.OracleDriver</property>
-        <property name="connection.url">jdbc:oracle:thin:@devrac-scan.dfps.state.tx.us:1521/impactd</property>
-        <property name="connection.username">capson</property>
-        <property name="connection.password">binuxik</property>
+        <property name="connection.url">jdbc:oracle:thin:@****************</property>
+        <property name="connection.username">****</property>
+        <property name="connection.password">******</property>
 
 <!--         JDBC connection pool (use the built-in) -->
         <property name="connection.pool_size">1</property>
