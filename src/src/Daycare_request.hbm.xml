@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+
+<hibernate-mapping>
+
+
+<class table="DAYCARE_REQUEST" name="edu.lavanya.learn.hibernate.Daycare_request">
+
+<meta attribute="class-description"> This class contains the Daycare_request details. </meta>
+
+
+<id name="ID_DAYCARE_REQUEST">  
+<!-- <generator class="sequence"></generator>   -->
+</id>
+
+<property name="DT_LAST_UPDATE"></property>  
+<property name="ID_LAST_UPDATE_PERSON"></property>  
+<property name="DT_CREATED"></property>  
+<property name="ID_CREATED_PERSON"></property>
+<property name="ID_CASE"></property>  
+<property name="ID_STAGE"></property>
+<property name="ID_EVENT"></property>  
+<property name="IND_INVALID"></property>
+<property name="DT_INVALID"></property>
+<property name="TXT_COMMENT_INVALID"></property>
+</class>
+
+</hibernate-mapping>
