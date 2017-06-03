@@ -80,9 +80,9 @@ public class PersonIDDaoimpl implements PersonIdDao {
 
 			Session session = PersonIDDaoimpl.getSession();
 			Transaction trans = session.beginTransaction();
-			PersonID personid = session.load(PersonID.class, 53816864);
+			PersonID personid = session.load(PersonID.class, personidentifier.getIdpersonidentifier());
 			System.out.println("Record to be updated is : " +personid.getIdpersonidentifier());
-		    personid.setPersonid(83351148);
+		    personid.setPersonid(personidentifier.getPersonid());
 			session.saveOrUpdate(personid);
 			trans.commit();
 			System.out.println("Record updated successfully "+personid );
