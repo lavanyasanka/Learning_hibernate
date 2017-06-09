@@ -31,9 +31,12 @@
         <mapping class="edu.lavanya.learn.hibernate.model.Employee"/>
         <mapping class="edu.lavanya.learn.hibernate.model.Cart1"/>
         <mapping class="edu.lavanya.learn.hibernate.model.Items1"/>
+<!--        <mapping class="edu.lavanya.learn.hibernate.model.EmployeeManyToMany"/> -->
+<!--        <mapping class="edu.lavanya.learn.hibernate.model.Certificate"/>        -->
         
         <mapping resource="cart.hbm.xml"/>
         <mapping resource="items.hbm.xml"/>
-        
+        <mapping resource="Employee.hbm.xml"/>
+        <mapping resource="Certificates.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>
