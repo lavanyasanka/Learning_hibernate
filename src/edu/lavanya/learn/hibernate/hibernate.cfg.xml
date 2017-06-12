@@ -26,17 +26,14 @@
 		<property name="show_sql">true</property> <!-- Show SQL in console -->
 		<property name="format_sql">true</property> <!-- Show SQL formatted -->
 		<property name="hbm2ddl.auto">update</property>
+		
+       <mapping class="HibernateMaven.edu.lavanya.learn.hibernate.Payment"/> 
+       <mapping class="HibernateMaven.edu.lavanya.learn.hibernate.Check"/> 
+       <mapping class="HibernateMaven.edu.lavanya.learn.hibernate.CreditCard"/> 
+       
+       
+<!-- <mapping resource="Payment.hbm.xml" /> -->
 
-        <mapping class="edu.lavanya.learn.hibernate.model.Address"/>
-        <mapping class="edu.lavanya.learn.hibernate.model.Employee"/>
-        <mapping class="edu.lavanya.learn.hibernate.model.Cart1"/>
-        <mapping class="edu.lavanya.learn.hibernate.model.Items1"/>
-<!--        <mapping class="edu.lavanya.learn.hibernate.model.EmployeeManyToMany"/> -->
-<!--        <mapping class="edu.lavanya.learn.hibernate.model.Certificate"/>        -->
-        
-        <mapping resource="cart.hbm.xml"/>
-        <mapping resource="items.hbm.xml"/>
-        <mapping resource="Employee.hbm.xml"/>
-        <mapping resource="Certificates.hbm.xml"/>
+
     </session-factory>
 </hibernate-configuration>
