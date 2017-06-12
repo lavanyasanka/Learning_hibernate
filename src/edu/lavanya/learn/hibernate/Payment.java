@@ -1,5 +1,7 @@
 package HibernateMaven.edu.lavanya.learn.hibernate;
 
+import javax.persistence.DiscriminatorColumn;
+import javax.persistence.DiscriminatorType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,8 +11,8 @@ import javax.persistence.InheritanceType;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "pay")
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS) 
+@Inheritance(strategy = InheritanceType.JOINED) 
+@Table(name = "Pay")
 public class Payment {
 	@Id  
 	@GeneratedValue(strategy=GenerationType.AUTO) 

@@ -1,10 +1,11 @@
 package HibernateMaven.edu.lavanya.learn.hibernate;
 
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity  
-@Table(name="Pay_check")  
+
 
 public class Check extends Payment{
 	
